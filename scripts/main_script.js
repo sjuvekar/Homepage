@@ -6,27 +6,41 @@
  */
  
 $(document).ready(function() {
+
+    $('.nav li a').on('click', function(e){
+
+        var $thisLi = $(this).parent('li');
+        var $ul = $thisLi.parent('ul');
+
+        if (!$thisLi.hasClass('active'))
+        {
+            $ul.find('li.active').removeClass('active');
+                $thisLi.addClass('active');
+        }
+
+	});
+	
 	$("#main").load("main.html");
 	
-$("#home").click( function() {
-	$("#main").load("main.html");
-.});
+	$("#home").click( function() {
+		$("#main").load("main.html")
+	});
 
-$("#paintings").click( function() {
-	$("#main").load("painting.html")
-});
+	$("#paintings").click( function() {
+		$("#main").load("painting.html")
+	});
 
-$("#geek").click( function() {
-	$("#main").load("geek.html")
-});
+	$("#geek").click( function() {
+		$("#main").load("geek.html")
+	});
 
-$("#reading").click( function() {
-	$("#main").load("reading.html")
-});
+	$("#reading").click( function() {
+		$("#main").load("reading.html")
+	});
 
-$("#contact").click( function() {
-	$("#main").load("contact.html")
-});
+	$("#contact").click( function() {
+		$("#main").load("contact.html")
+	});
 
 });
 

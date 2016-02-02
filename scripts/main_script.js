@@ -9,8 +9,8 @@ $(document).ready(function() {
 	$("#main").load("main.html");
 	
 $("#home").click( function() {
-	$("#main").load("main.html")
-});
+	$("#main").load("main.html");
+.});
 
 $("#paintings").click( function() {
 	$("#main").load("painting.html")

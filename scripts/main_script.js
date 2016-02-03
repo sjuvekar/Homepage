@@ -6,19 +6,6 @@
  */
  
 $(document).ready(function() {
-
-    $('.nav li a').on('click', function(e){
-
-        var $thisLi = $(this).parent('li');
-        var $ul = $thisLi.parent('ul');
-
-        if (!$thisLi.hasClass('active'))
-        {
-            $ul.find('li.active').removeClass('active');
-                $thisLi.addClass('active');
-        }
-
-	});
 	
 	$("#main").load("main.html");
 	

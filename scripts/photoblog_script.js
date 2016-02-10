@@ -13,4 +13,9 @@ $(document).ready(function() {
 	$("#people").click( function() {
 		$("#main").load("moments.html")
 	});
+
+  $("#about").click( function() {
+		$("#main").load("about.html")
+	});
+
 });
